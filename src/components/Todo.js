@@ -11,8 +11,8 @@ const Todo = ({ addTask, onDeleteTask, onToggleTask }) => {
 					<span style={task.done ? { textDecoration: 'line-through' } : {}}>
 						{task.task}
 					</span>
-					{/* ask poseidon or dabo to explain this line */}
-					<Button onClick={() => onDeleteTask(task.id)}>close</Button>
+
+					<Button onClick={() => onDeleteTask(task.id)}>Delete</Button>
 				</li>
 			))}
 		</ul>
